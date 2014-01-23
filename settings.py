@@ -1,7 +1,7 @@
 AUTHOR = "Berkant AYDIN"
 SITEURL = "http://berkantaydin.com.tr"
 SITENAME = "Berkant AYDIN"
-LOCALE = 'tr_TR.utf8'
+LOCALE = 'tr_TR.UTF-8'
 TIMEZONE = 'Europe/Istanbul'
 
 DISPLAY_PAGES_ON_MENU = True
