@@ -1,19 +1,16 @@
+language: python
 branches:
   only:
   - master
-language: python
-python:
-- 2.7
 install:
-- pip install -r requirements.txt --use-mirrors
+- pip install pelican
+- pip install ghp-import
 script:
-- make html
+- make publish github
 notifications:
   email:
     on_success: always
     on_failure: always
 env:
   global:
-  - secure: Ppl1JHWNIvJSeewdATofwnYJgV3rCqVRjpfCsZG85qgeOuLz4tG3ANSUd+6WIFCwanW/sog5DYpNlAZ4Sb1eyHVK0O1Uv7KnacppvYccLfwYcsiXp+hfMxodAwiDwzICDemfb0DOYERzezvu5yuPmPB2jS9SPtnvN74/pZYHY3E=
-  - git submodule update --init --recursive
-after_success: ./deploy.sh
+    secure: Ppl1JHWNIvJSeewdATofwnYJgV3rCqVRjpfCsZG85qgeOuLz4tG3ANSUd+6WIFCwanW/sog5DYpNlAZ4Sb1eyHVK0O1Uv7KnacppvYccLfwYcsiXp+hfMxodAwiDwzICDemfb0DOYERzezvu5yuPmPB2jS9SPtnvN74/pZYHY3E=
