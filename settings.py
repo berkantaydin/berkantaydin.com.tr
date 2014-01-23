@@ -12,5 +12,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = True
 
+THEME = "pelican-theme"
+
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
