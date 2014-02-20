@@ -1,5 +1,5 @@
 AUTHOR = "Berkant AYDIN"
-SITEURL = "http://localhost:8000"
+SITEURL = "http://berkantaydin.com.tr"
 SITENAME = "Berkant AYDIN"
 LOCALE = 'en_US.UTF-8'
 TIMEZONE = 'Europe/Istanbul'
